@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hale Digital — Get Found by More Plumbing Customers</title>
+<style>
+  :root { --navy:#0d1b2a; --navy2:#1b263b; --amber:#f4a916; --ink:#e8eaf0; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:var(--navy); color:var(--ink); line-height:1.6; }
+  .wrap { max-width:880px; margin:0 auto; padding:24px 20px 80px; }
+  header { display:flex; align-items:center; gap:10px; padding:18px 0 34px; }
+  .logo { width:38px; height:38px; border-radius:9px; background:var(--amber); display:flex; align-items:center; justify-content:center; font-weight:800; color:var(--navy); font-size:19px; }
+  .brand { font-weight:700; letter-spacing:.4px; } .brand span{color:var(--amber);}
+  .hero h1 { font-size:clamp(28px,5.5vw,44px); line-height:1.15; font-weight:800; }
+  .hero h1 em { color:var(--amber); font-style:normal; }
+  .hero p.sub { margin-top:14px; font-size:17px; color:#aab4c8; max-width:600px; }
+  .badges { margin-top:20px; display:flex; flex-wrap:wrap; gap:8px; }
+  .badge { border:1px solid #33415c; border-radius:99px; padding:4px 13px; font-size:13px; color:#c3ccdd; }
+  .cardgrid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:16px; margin-top:42px; }
+  .card { background:var(--navy2); border:1px solid #2b3950; border-radius:14px; padding:22px; }
+  .card h3 { color:var(--amber); font-size:17px; margin-bottom:8px; }
+  .price { float:right; background:var(--amber); color:var(--navy); font-weight:800; padding:2px 11px; border-radius:99px; font-size:15px; }
+  .card ul { list-style:none; margin-top:10px; }
+  .card li { padding-left:20px; position:relative; margin:6px 0; color:#c3ccdd; font-size:14.5px; }
+  .card li::before { content:"✓"; position:absolute; left:0; color:var(--amber); font-weight:700; }
+  h2.sec { margin-top:52px; font-size:23px; font-weight:800; }
+  .steps { counter-reset:s; margin-top:18px; display:grid; gap:12px; }
+  .step { background:var(--navy2); border:1px solid #2b3950; border-radius:12px; padding:16px 18px 16px 56px; position:relative; }
+  .step::before { counter-increment:s; content:counter(s); position:absolute; left:16px; top:16px; width:26px; height:26px; background:var(--amber); color:var(--navy); border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; }
+  .cta { margin-top:46px; background:linear-gradient(135deg,#16233a,#1b2c49); border:1px solid var(--amber); border-radius:16px; padding:30px 26px; text-align:center; }
+  .cta h2 { font-size:24px; font-weight:800; }
+  .cta p { color:#aab4c8; margin:10px auto 20px; max-width:480px; }
+  .btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { text-decoration:none; font-weight:700; padding:12px 26px; border-radius:99px; transition:transform .15s ease; }
+  .btn:hover { transform:translateY(-2px); }
+  .btn.primary { background:var(--amber); color:var(--navy); }
+  .btn.ghost { border:1.5px solid #4a5a78; color:var(--ink); }
+  footer { margin-top:54px; text-align:center; font-size:13px; color:#5e6b85; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header><div class="logo">H</div><div class="brand">HALE<span>DIGITAL</span></div></header>
+
+  <section class="hero">
+    <h1>Your plumbing company is <em>losing calls</em> on Google every day.</h1>
+    <p class="sub">We find exactly where customers are slipping away — your Google listing, your reviews, your website — fix it within 48 hours, and show you the before-and-after. No agency retainers. One flat price.</p>
+    <div class="badges"><span class="badge">⚡ 48-hour delivery</span><span class="badge">💰 Flat fee, no retainers</span><span class="badge">🇿🇦 Trade specialists</span></div>
+  </section>
+
+  <div class="cardgrid">
+    <div class="card">
+      <span class="price">R1 500</span>
+      <h3>Google Visibility Rescue</h3>
+      <ul>
+        <li>Full Google Business Profile overhaul</li>
+        <li>Every review answered professionally within 24h</li>
+        <li>Competitor ranking-gap report</li>
+        <li>30-day action plan you keep</li>
+      </ul>
+    </div>
+    <div class="card">
+      <span class="price">R2 500</span>
+      <h3>Website Rescue</h3>
+      <ul>
+        <li>A fast, modern one-page site</li>
+        <li>Built &amp; hosted for you in days</li>
+        <li>Click-to-call &amp; WhatsApp buttons</li>
+        <li>You own everything, forever</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="sec">How it works</h2>
+  <div class="steps">
+    <div class="step"><strong>Free audit video.</strong> We screen-record YOUR Google listing and show the exact gaps costing you calls.</div>
+    <div class="step"><strong>Flat-price fix.</strong> One payment of R1 500 (or R2 500 with website). We do all the work.</div>
+    <div class="step"><strong>48-hour delivery.</strong> Everything done, documented, and measured — plus 30 days of review support included.</div>
+  </div>
+
+  <section class="cta">
+    <h2>Get your free audit video</h2>
+    <p>Email us with your business name. Within hours you'll have a short video showing exactly what's leaking — free, whether you hire us or not.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please&body=My%20business%20name%20and%20suburb%3A%20">📧 Email: mardswar@gmail.com</a>
+      <a class="btn ghost" href="https://wa.me/27XXXXXXXXX?text=Hi%2C%20I%27d%20like%20my%20free%20Google%20audit%20video" id="waBtn">💬 WhatsApp us</a>
+    </div>
+  </section>
+
+  <footer>Hale Digital · Serving plumbers &amp; trade businesses across South Africa · Reply STOP to any message to opt out.</footer>
+</div>
+<script>
+  // Set real WhatsApp number here when available
+  // document.getElementById('waBtn').href = 'https://wa.me/27XXXXXXXXX?text=Hi';
+</script>
+</body>
+</html>
