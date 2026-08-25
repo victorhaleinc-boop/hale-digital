@@ -1,48 +1,284 @@
-<!doctype html>
-<html lang="en-ZA">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hale Digital — Google &amp; web rescue for SA trades</title>
-  <meta name="description" content="Hale Digital fixes the Google presence of South African plumbing and trade businesses. Free audit video, flat fee, done in 48 hours.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&amp;display=swap" rel="stylesheet">
-  <style>
-    :root{--page:#fff;--warm:#f6f5f4;--ink:rgba(0,0,0,.95);--secondary:#615d59;--muted:#a39e98;--line:rgba(0,0,0,.1);--blue:#0075de;--blue-hover:#005bab;--focus:#097fe8;--max:1140px;--shadow:rgba(0,0,0,.04) 0 4px 18px,rgba(0,0,0,.027) 0 2px 7.85px,rgba(0,0,0,.02) 0 .8px 2.9px,rgba(0,0,0,.01) 0 .175px 1.04px}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--page);color:var(--ink);font-family:'Source Sans 3',sans-serif;font-size:16.5px;line-height:1.55;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}.section{padding:96px 0}.section-head{margin-bottom:42px}.section-head h2{margin:0;font:700 40px/1.05 'Source Serif 4',serif;letter-spacing:-1px}.section-head p{color:var(--secondary)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;border-bottom:1px solid var(--line)}.wordmark{font:700 19px/1 'Source Serif 4',serif}.wordmark span{color:var(--blue)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;border-radius:4px;padding:10px 18px;font-size:15px;font-weight:600;border:1px solid var(--line);transition:background .2s ease,transform .2s ease}.btn:focus-visible{outline:3px solid var(--focus);outline-offset:2px}.btn:active{transform:scale(.98)}.btn-primary{background:var(--blue);border-color:var(--blue);color:#fff}.btn-primary:hover{background:var(--blue-hover)}.btn-secondary{background:transparent;color:var(--ink)}.btn-secondary:hover{background:rgba(0,0,0,.04)}
-    .hero{padding:110px 0 96px}.hero-copy{max-width:760px}.badge,.tag{display:inline-block;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:600;letter-spacing:.3px;text-transform:uppercase}.badge{background:#f2f9ff;color:var(--focus)}.hero h1{max-width:780px;margin:20px 0 22px;font:700 clamp(38px,6vw,64px)/1.02 'Source Serif 4',serif;letter-spacing:-2px}.hero-sub{max-width:560px;margin:0 0 28px;color:var(--secondary);font-size:20px;line-height:1.45}.actions{display:flex;flex-wrap:wrap;gap:10px}.caption{margin:18px 0 0;color:var(--muted);font-size:14px}
-    .proof-strip{padding:28px 0;background:var(--warm);text-align:center;color:var(--secondary);font:italic 17px/1.4 'Source Serif 4',serif}.proof-strip p{margin:0}
-    .editorial-list{border-top:1px solid var(--line)}.editorial-row{display:grid;grid-template-columns:90px 220px 1fr;gap:24px;align-items:center;padding:27px 0;border-bottom:1px solid var(--line)}.editorial-row .num{font:600 48px/1 'Source Serif 4',serif;color:var(--muted)}.editorial-row h3{margin:0;font-size:21px;line-height:1.15;letter-spacing:-.25px}.editorial-row p{margin:0;color:var(--secondary);font-size:15px}
-    .warm{background:var(--warm)}.price-grid{display:grid;grid-template-columns:1.06fr 1fr;gap:22px;align-items:start}.price-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;min-height:100%}.price-card.featured{border-top:3px solid var(--blue);border-radius:16px;box-shadow:var(--shadow)}.tag{margin-bottom:16px;background:#f2f9ff;color:var(--focus)}.price-card h3{margin:0 0 18px;font-size:21px;line-height:1.2;letter-spacing:-.25px}.price{font:700 44px/1 'Source Serif 4',serif}.once{margin-top:7px;color:var(--muted);font-size:15px}.features{list-style:none;padding:20px 0 10px;margin:18px 0 0;border-top:1px solid var(--line)}.features li{margin:9px 0;color:var(--ink)}.features li::before{content:'✓';color:var(--blue);font-weight:700;margin-right:10px}.footnote{margin:16px 0 0;color:var(--secondary);font-size:15px}.payment-note{margin:22px 0 0;color:var(--muted);font-size:13px;text-align:center}
-    .timeline{display:grid;grid-template-columns:repeat(3,1fr);position:relative;gap:34px}.timeline::before{content:'';position:absolute;top:17px;left:12%;right:12%;height:1px;background:var(--line)}.step{position:relative}.step-number{display:grid;place-items:center;width:34px;height:34px;border:1px solid var(--line);border-radius:50%;background:#fff;font:600 18px/1 'Source Serif 4',serif}.step h3{margin:18px 0 5px;font-size:21px}.step p{margin:0;color:var(--secondary);font-size:15px}
-    .faq{max-width:850px}.faq details{border-top:1px solid var(--line)}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{position:relative;padding:19px 38px 19px 0;cursor:pointer;list-style:none;font:600 18px/1.3 'Source Serif 4',serif}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:'⌄';position:absolute;right:5px;color:var(--secondary);font:400 22px/1 'Source Serif 4',serif;transition:transform .2s ease}.faq details[open] summary::after{transform:rotate(180deg)}.answer{max-width:680px;padding:0 30px 20px 0;color:var(--secondary);font-size:15px}.answer p{margin:0}
-    .final{padding:96px 0}.final-inner{display:flex;align-items:center;justify-content:space-between;gap:30px}.final h2{max-width:650px;margin:0;font:700 40px/1.05 'Source Serif 4',serif;letter-spacing:-1px}.final .caption{margin-top:12px}.footer{padding:26px 0 20px;border-top:1px solid var(--line);font-size:15px;color:var(--secondary)}.footer-top{display:flex;justify-content:space-between;gap:24px}.footer-links{display:flex;gap:18px}.footer-links a{color:var(--blue)}.footer-bottom{margin-top:20px;color:var(--muted);font-size:13px}.mobile-cta{display:none}
-    .reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease-out,transform .5s ease-out}.reveal.visible{opacity:1;transform:none}
-    @media(max-width:700px){.wrap{width:min(var(--max),calc(100% - 32px))}.section{padding:56px 0}.nav{padding:16px 0}.nav .btn{padding:9px 12px;font-size:14px}.hero{padding:72px 0 56px}.hero h1{font-size:34px;letter-spacing:-1px}.hero-sub{font-size:18px}.actions{flex-direction:column;align-items:stretch}.btn{width:100%}.editorial-row{grid-template-columns:54px 1fr;gap:12px;padding:22px 0}.editorial-row .num{font-size:40px;grid-row:span 2}.editorial-row p{grid-column:2}.section-head h2,.final h2{font-size:34px}.price-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr;gap:28px}.timeline::before{top:17px;bottom:17px;left:16px;width:1px;height:auto;right:auto}.step{display:grid;grid-template-columns:34px 1fr;column-gap:16px}.step h3,.step p{grid-column:2}.step h3{margin-top:6px}.step p{margin-top:-2px}.final-inner{display:block}.final .actions{margin-top:26px}.footer-top{display:block}.footer-links{margin-top:12px;flex-wrap:wrap}.mobile-cta{display:block;position:fixed;z-index:5;left:0;right:0;bottom:0;padding:9px 14px 7px;background:#fff;border-top:1px solid var(--line);text-align:center}.mobile-cta .btn{display:flex;padding:9px 14px}.mobile-cta small{display:block;color:var(--muted);font-size:11px;line-height:1.2;margin-top:2px}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hale Digital — Fix your Google presence. Get more calls.</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --canvas:#ffffff; --surface:#f6f5f4;
+  --ink:rgba(0,0,0,.95); --ink-soft:#615d59; --ink-faint:#a39e98;
+  --line:rgba(0,0,0,.1);
+  --accent:#0075de; --accent-deep:#005bab;
+  --serif:'Source Serif 4',Georgia,serif; --sans:'Source Sans 3',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--canvas);font-size:16.5px;line-height:1.55}
+img{display:block;max-width:100%}
+a{color:var(--accent)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* reveal (once, subtle) */
+.reveal{opacity:0;transform:translateY(12px);transition:opacity .5s ease-out,transform .5s ease-out}
+.reveal.visible{opacity:1;transform:none}
+
+/* nav */
+nav{border-bottom:1px solid var(--line);background:var(--canvas)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-family:var(--serif);font-weight:700;font-size:19px;text-decoration:none;color:var(--ink)}
+.brand em{color:var(--accent);font-style:normal}
+
+/* buttons */
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:15px;border-radius:4px;padding:11px 18px;border:1px solid transparent;transition:transform .15s,background-color .15s,color .15s,border-color .15s}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent-deep)}
+.btn-ghost{border-color:var(--line);color:var(--ink)}
+.btn-ghost:hover{background:rgba(0,0,0,.04)}
+
+/* acts */
+.act{padding:96px 0}
+.act.surface{background:var(--surface)}
+h2{font-family:var(--serif);font-weight:700;font-size:clamp(30px,4vw,40px);letter-spacing:-1px;line-height:1.05}
+.kicker{font-size:12px;font-weight:600;letter-spacing:.3px;text-transform:uppercase;color:var(--ink-faint)}
+
+/* ACT 1 hero */
+.hero{padding:110px 0 96px;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(36px,5vw,58px);line-height:1.04;letter-spacing:-1.8px}
+.hero p.sub{font-size:20px;color:var(--ink-soft);margin:22px 0 28px;max-width:520px}
+.badge{display:inline-block;background:#f2f9ff;color:#097fe8;font-size:12px;font-weight:600;letter-spacing:.3px;text-transform:uppercase;padding:4px 10px;border-radius:9999px;margin-bottom:20px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img{position:relative}
+.hero-img img{border-radius:12px;border:1px solid var(--line)}
+.hero-caption{font-size:14px;color:var(--ink-faint);margin-top:10px}
+
+/* ACT 2 tension: editorial numbered list, left anchored */
+.leaks .row{display:grid;grid-template-columns:110px 1fr;gap:24px;padding:34px 0;border-bottom:1px solid var(--line);align-items:start}
+.leaks .row:last-child{border-bottom:none}
+.numeral{font-family:var(--serif);font-size:52px;font-weight:600;color:var(--ink-faint);line-height:.9}
+.leaks h3{font-size:21px;font-weight:700;letter-spacing:-.25px;margin-bottom:6px}
+.leaks p{color:var(--ink-soft);max-width:620px}
+
+/* ACT 3 PEAK: the repair wipe (signature move) */
+.repair{display:grid;place-items:center}
+.frame{position:relative;max-width:880px;width:100%;border-radius:16px;border:1px solid var(--line);box-shadow:rgba(0,0,0,.04) 0 4px 18px,rgba(0,0,0,.027) 0 2px 7.85px,rgba(0,0,0,.02) 0 .8px 2.9px;overflow:hidden}
+.frame img{width:100%;height:auto}
+.frame .after{position:absolute;inset:0;clip-path:inset(0 100% 0 0)}
+.repair-copy{max-width:640px;text-align:center;margin:0 auto 40px}
+.repair-copy p.big{font-family:var(--serif);font-size:clamp(24px,3vw,32px);line-height:1.15;letter-spacing:-.8px;font-weight:600}
+.wipe-hint{font-size:13px;color:var(--ink-faint);text-align:center;margin-top:14px}
+
+/* ACT 4 substance: split anchor, photo left copy right */
+.substance{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.substance img{border-radius:12px;border:1px solid var(--line)}
+.substance ul{list-style:none;margin-top:18px}
+.substance li{padding-left:26px;position:relative;margin:10px 0;color:var(--ink-soft)}
+.substance li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+
+/* ACT 5 range: asymmetric pricing */
+.pricing{display:grid;grid-template-columns:1.08fr .92fr;gap:20px;align-items:stretch}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:28px}
+.card.featured{border-radius:16px;border-top:3px solid var(--accent);box-shadow:rgba(0,0,0,.04) 0 4px 18px,rgba(0,0,0,.027) 0 2px 7.85px,rgba(0,0,0,.02) 0 .8px 2.9px}
+.price{font-family:var(--serif);font-weight:700;font-size:44px;letter-spacing:-1px;margin:10px 0 2px}
+.per{font-size:13px;color:var(--ink-faint);margin-bottom:16px}
+.card ul{list-style:none}
+.card li{padding-left:26px;position:relative;margin:9px 0;color:var(--ink-soft)}
+.card li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:700}
+.foot-note{text-align:center;font-size:13px;color:var(--ink-faint);margin-top:18px}
+
+/* ACT 6 close */
+.close{text-align:left}
+.close h2{max-width:720px}
+.close p{color:var(--ink-soft);margin:18px 0 26px;max-width:560px}
+.close img{border-radius:12px;border:1px solid var(--line);margin-top:48px;width:100%;height:220px;object-fit:cover}
+
+footer{border-top:1px solid var(--line);padding:28px 0;font-size:14px;color:var(--ink-soft)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.tiny{font-size:13px;color:var(--ink-faint);margin-top:8px}
+
+/* sticky mobile cta */
+.mobile-cta{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);padding:10px 16px 12px;z-index:50}
+.mobile-cta small{display:block;text-align:center;font-size:12px;color:var(--ink-faint);margin-top:4px}
+.mobile-cta .btn{display:block;text-align:center}
+@media(min-width:900px){.mobile-cta{display:none}}
+
+@media(max-width:899px){
+  .act{padding:56px 0}
+  .hero{grid-template-columns:1fr;padding:64px 0 56px;gap:32px}
+  .leaks .row{grid-template-columns:64px 1fr;gap:16px;padding:26px 0}
+  .numeral{font-size:38px}
+  .substance{grid-template-columns:1fr;gap:28px}
+  .pricing{grid-template-columns:1fr}
+}
+</style>
 </head>
 <body>
-  <header><nav class="wrap nav"><a class="wordmark" href="#top">Hale <span>Digital</span></a><a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please">Get my free audit</a></nav></header>
-  <main id="top">
-    <section class="hero"><div class="wrap hero-copy reveal"><span class="badge">For South African plumbing businesses</span><h1>Every day your Google listing looks unfinished, someone else gets the call.</h1><p class="hero-sub">We fix your Google presence, answer your reviews, and get you found — flat fee, done in 48 hours. No retainers, no agency games.</p><div class="actions"><a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please">Get my free audit video</a><a class="btn btn-secondary" href="#fixes">See the two fixes</a></div><p class="caption">48-hour delivery · Flat once-off fee · You own everything</p></div></section>
-    <section class="proof-strip"><div class="wrap"><p>“87% of customers check Google before they call a tradesman. Most listings give them a reason not to.”</p></div></section>
-    <section class="section"><div class="wrap"><div class="section-head reveal"><h2>Where the calls are leaking</h2></div><div class="editorial-list"><article class="editorial-row reveal"><div class="num">1</div><h3>Unanswered reviews</h3><p>Customers read silence as “closed down”. Competitors who reply look alive.</p></article><article class="editorial-row reveal"><div class="num">2</div><h3>Empty photo shelf</h3><p>Listings with 10+ photos get dramatically more direction requests. Most plumbers have three blurry ones.</p></article><article class="editorial-row reveal"><div class="num">3</div><h3>Wrong category setup</h3><p>You may not even appear for “emergency plumber near me” — the highest-value search there is.</p></article></div></div></section>
-    <section class="section warm" id="fixes"><div class="wrap"><div class="section-head reveal"><h2>Two fixes. Two prices. Done.</h2></div><div class="price-grid"><article class="price-card featured reveal"><span class="tag">Most popular</span><h3>Google Visibility Rescue</h3><div class="price">R1 500</div><div class="once">once-off</div><ul class="features"><li>Google Business Profile cleanup</li><li>Review reply setup</li><li>Photo and service information fix</li><li>Category setup for local searches</li></ul><p class="footnote">Live within 48 hours · Includes 30 days of review replies</p></article><article class="price-card reveal"><h3>Website Rescue</h3><div class="price">R2 500</div><div class="once">once-off</div><ul class="features"><li>One-page website built for your business</li><li>Click-to-call and WhatsApp contact</li><li>Clear services and service areas</li><li>Built, hosted, and handed over to you</li></ul><p class="footnote">Built, hosted, yours forever</p></article></div><p class="payment-note">PayPal invoice · Half now, half on delivery available for first clients</p></div></section>
-    <section class="section"><div class="wrap"><div class="section-head reveal"><h2>How it works</h2></div><div class="timeline"><article class="step reveal"><div class="step-number">1</div><h3>Free audit video</h3><p>I show you the two things costing you calls.</p></article><article class="step reveal"><div class="step-number">2</div><h3>Flat-price fix</h3><p>You choose the fix. The price stays the price.</p></article><article class="step reveal"><div class="step-number">3</div><h3>Live in 48 hours</h3><p>You get the finished work and a before/after report.</p></article></div></div></section>
-    <section class="section warm"><div class="wrap faq"><div class="section-head reveal"><h2>Questions, answered plainly</h2></div><div class="reveal"><details><summary>Do you guarantee results?</summary><div class="answer"><p>Honest answer: no. Nobody can promise rankings. I can promise measurable fixes to your listing and clear proof of what changed.</p></div></details><details><summary>Who are you?</summary><div class="answer"><p>Independent. You deal directly with me, Mardan — my number, my work.</p></div></details><details><summary>Why is it so cheap?</summary><div class="answer"><p>I work from a laptop. You are not paying for agency rent, layers of staff, or long retainers.</p></div></details><details><summary>How does payment work?</summary><div class="answer"><p>I send a PayPal invoice. It keeps both sides protected.</p></div></details><details><summary>What if I hate it?</summary><div class="answer"><p>You get the before/after report, and you keep everything either way.</p></div></details></div></div></section>
-    <section class="final"><div class="wrap final-inner reveal"><div><h2>Your next customer is searching right now.</h2><p class="caption">Free audit video. No strings.</p></div><a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please">Get my free audit video</a></div></section>
-  </main>
-  <footer class="footer"><div class="wrap"><div class="footer-top"><div>Hale Digital — Google &amp; web rescue for SA trades.</div><div class="footer-links"><a href="mailto:mardswar@gmail.com">mardswar@gmail.com</a><a href="https://wa.me/27649895786">WhatsApp</a></div></div><div class="footer-bottom">Serving plumbers &amp; trade businesses across South Africa · Not for you? Reply STOP anytime.</div></div></footer>
-  <div class="mobile-cta"><a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please">Get my free audit video</a><small>Free audit video. No strings.</small></div>
-  <script>
-    const observer = new IntersectionObserver((entries) => entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .12 });
-    document.querySelectorAll('.reveal').forEach((element, index) => { element.style.transitionDelay = `${(index % 3) * 80}ms`; observer.observe(element); });
-    const mobileCta = document.querySelector('.mobile-cta');
-    const finalCta = document.querySelector('.final');
-    new IntersectionObserver(([entry]) => { mobileCta.hidden = entry.isIntersecting; }, { threshold: .15 }).observe(finalCta);
-  </script>
+
+<nav><div class="wrap">
+  <a class="brand" href="#top">Hale <em>Digital</em></a>
+  <a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please">Get my free audit</a>
+</div></nav>
+
+<!-- ACT 1 · RECOGNITION · calm -->
+<header class="hero wrap" id="top">
+  <div class="reveal">
+    <span class="badge">For South African plumbing businesses</span>
+    <h1>Every day your listing looks unfinished, someone else gets the call.</h1>
+    <p class="sub">We fix what makes a good plumbing business look closed, slow or hard to trust on Google. Flat fee. Done in 48 hours.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please">Get my free audit video</a>
+      <a class="btn btn-ghost" href="https://wa.me/27649895786?text=Hi%2C%20I%27d%20like%20my%20free%20Google%20audit%20video">WhatsApp me</a>
+    </div>
+    <p class="hero-caption">48-hour delivery · Flat once-off fee · You own everything</p>
+  </div>
+  <figure class="hero-img reveal">
+    <img src="assets/listing-before.png" alt="A neglected plumbing business listing on a phone, on a workbench">
+    <figcaption class="hero-caption">Sound familiar? Keep scrolling.</figcaption>
+  </figure>
+</header>
+
+<!-- ACT 2 · TENSION · sting -->
+<section class="act surface leaks">
+  <div class="wrap reveal">
+    <p class="kicker">The leak</p>
+    <h2>Good work is useless if Google sends the call elsewhere.</h2>
+    <div style="height:28px"></div>
+    <div class="row"><div class="numeral">01</div><div><h3>No recent photos</h3><p>A blank-looking listing feels like a business that might not answer. Customers cannot see the work, so they move on.</p></div></div>
+    <div class="row"><div class="numeral">02</div><div><h3>Reviews left hanging</h3><p>Silence after a review tells the next customer nobody is watching. Competitors who reply look alive and busy.</p></div></div>
+    <div class="row"><div class="numeral">03</div><div><h3>Wrong category setup</h3><p>If Google cannot place you properly, it cannot put you in front of "emergency plumber near me". The most valuable search there is.</p></div></div>
+  </div>
+</section>
+
+<!-- ACT 3 · TURN · THE PEAK — signature repair wipe -->
+<section class="act repair">
+  <div class="wrap">
+    <div class="repair-copy reveal">
+      <p class="big">Watch what a fixed listing looks like. Scroll slowly.</p>
+    </div>
+    <div class="frame" id="wipe">
+      <img src="assets/listing-after.png" alt="The same phone showing a polished listing with photos and answered reviews">
+      <div class="after"><img src="assets/listing-before.png" alt="" id="beforeLayer"></div>
+      <!-- before layer sits on top and wipes away as you scroll -->
+    </div>
+    <style>
+      /* before image overlays after-image; scroll drives clip-path inset from right */
+      #wipe .after{clip-path:inset(0 0% 0 0);transition:clip-path .08s linear}
+    </style>
+    <p class="wipe-hint">This is your free audit video's job, done for every client in 48 hours.</p>
+  </div>
+</section>
+
+<!-- spacer act giving the wipe room to scrub -->
+<div style="height:130vh;background:var(--canvas)"></div>
+
+<!-- ACT 4 · SUBSTANCE · grounded trust -->
+<section class="act surface">
+  <div class="wrap substance">
+    <img class="reveal" src="assets/hands.png" alt="Plumber's hands tightening a copper fitting">
+    <div class="reveal">
+      <p class="kicker">Substance</p>
+      <h2>No magic. Just the work, done properly.</h2>
+      <ul>
+        <li>Your Google profile rebuilt: categories, description, services, areas</li>
+        <li>A photo plan for your next three jobs (phone camera is enough)</li>
+        <li>Every new review answered professionally for 30 days</li>
+        <li>A competitor gap report: exactly why rivals rank above you</li>
+        <li>A before-and-after report so you can measure it yourself</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ACT 5 · RANGE · two prices, asymmetric -->
+<section class="act">
+  <div class="wrap">
+    <div class="reveal" style="margin-bottom:34px">
+      <p class="kicker">Range</p>
+      <h2>Spend less than one emergency call-out fee.</h2>
+    </div>
+    <div class="pricing">
+      <div class="card featured reveal">
+        <span class="badge">Most popular</span>
+        <h3 style="font-size:21px;font-weight:700;letter-spacing:-.25px">Google Visibility Rescue</h3>
+        <div class="price">R1 500</div>
+        <div class="per">once-off · delivered in 48 hours</div>
+        <ul>
+          <li>Full Google Business Profile overhaul</li>
+          <li>Reviews answered professionally within 24h, for 30 days</li>
+          <li>Competitor gap report</li>
+          <li>30-day action plan you keep</li>
+        </ul>
+        <div style="height:18px"></div>
+        <a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Fix%20my%20Google%20listing">Fix my Google listing →</a>
+      </div>
+      <div class="card reveal">
+        <h3 style="font-size:21px;font-weight:700;letter-spacing:-.25px">Website Rescue</h3>
+        <div class="price">R2 500</div>
+        <div class="per">once-off · built and hosted</div>
+        <ul>
+          <li>Fast, modern one-page website like this one</li>
+          <li>Click-to-call and WhatsApp buttons</li>
+          <li>Built and hosted for you</li>
+          <li>You own it forever</li>
+        </ul>
+        <div style="height:18px"></div>
+        <a class="btn btn-ghost" href="mailto:mardswar@gmail.com?subject=Website%20Rescue">Make my site work harder →</a>
+      </div>
+    </div>
+    <p class="foot-note">PayPal invoice · Half now, half on delivery available for first clients</p>
+  </div>
+</section>
+
+<!-- ACT 6 · COMMITMENT · quiet resolve -->
+<section class="act close surface">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Your next job might be searching right now.</h2>
+      <p>Show Google you are open, trusted, and ready to answer. One message starts it:</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please">Email for my free audit</a>
+        <a class="btn btn-ghost" href="https://wa.me/27649895786?text=Hi%2C%20I%27d%20like%20my%20free%20Google%20audit%20video">WhatsApp me</a>
+      </div>
+    </div>
+    <img class="reveal" src="assets/van.png" alt="White service van on a suburban street at golden hour">
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div><strong>Hale Digital</strong><br>Google &amp; web rescue for SA trades.</div>
+  <div>mardswar@gmail.com<br>+27 64 989 5786
+    <p class="tiny">Serving plumbers &amp; trade businesses across South Africa · Not for you? Reply STOP anytime.</p>
+  </div>
+</div></footer>
+
+<div class="mobile-cta" id="mcta">
+  <a class="btn btn-primary" href="mailto:mardswar@gmail.com?subject=Free%20audit%20video%20please">Get my free audit video</a>
+  <small>Free audit video. No strings.</small>
+</div>
+
+<script>
+// once-only reveals
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3)*70+'ms';io.observe(el)});
+
+// SIGNATURE MOVE: scroll scrubs the repair wipe
+const frame=document.getElementById('wipe'), layer=document.getElementById('beforeLayer');
+function scrub(){
+  const r=frame.getBoundingClientRect();
+  const vh=innerHeight;
+  // progress 0 -> 1 while frame travels from bottom of viewport to its resting point
+  const raw=1-(r.top-vh*0.25)/(vh*0.75);
+  const p=Math.max(0,Math.min(1,raw));
+  layer.style.clipPath='inset(0 '+((1-p)*100).toFixed(1)+'% 0 0)';
+}
+addEventListener('scroll',scrub,{passive:true});scrub();
+
+// hide mobile cta near final section
+const mcta=document.getElementById('mcta');
+new IntersectionObserver(([e])=>{mcta.style.display=e.isIntersecting?'none':'block'},{threshold:.15})
+  .observe(document.querySelector('.close'));
+</script>
 </body>
 </html>
